@@ -1,4 +1,4 @@
-//
+// Abstract maze factory alongside the concrete maze factory classes
 // Created by tlrla on 2019-11-28.
 //
 
@@ -6,9 +6,6 @@
 #define ABSTRACTFACTORY_MAZE_FACTORY_HPP
 
 #include "maze.hpp"
-#include "room.hpp"
-#include "wall.hpp"
-#include "door.hpp"
 
 class maze_factory {
 public:
@@ -20,6 +17,7 @@ public:
     virtual door* make_door(room*, room*) = 0;
 };
 
+//A faery factory whose methods are used to create faery maze components
 class faery_factory : public maze_factory {
 public:
     maze* make_maze() override {
@@ -39,6 +37,7 @@ public:
     }
 };
 
+//A future factory whose methods are used to create future maze components
 class future_factory : public maze_factory {
 public:
     maze* make_maze() override {

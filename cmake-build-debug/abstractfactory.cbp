@@ -80,7 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/main.cpp">
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/door.hpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/driver.cpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/maze.hpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/maze_factory.hpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/maze_game.cpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/maze_game.hpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/room.hpp">
+			<Option target="abstractfactory"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/wall.hpp">
 			<Option target="abstractfactory"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/tlrla/CLionProjects/abstractfactory/CMakeLists.txt">

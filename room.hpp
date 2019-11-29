@@ -1,4 +1,4 @@
-//
+// Abstract room class alongside the concrete room classes
 // Created by tlrla on 2019-11-28.
 //
 
@@ -10,12 +10,14 @@
 
 using namespace std;
 
+//Abstract room class with pure virtual describe function
 class room {
 public:
     virtual ~room() = default;
     virtual void describe() = 0;
 };
 
+//Concrete room class of type faery that implements the custom describe function
 class faery_room : public room {
 public:
     void describe() override {
@@ -23,6 +25,7 @@ public:
     }
 };
 
+//Concrete room class of type future that implements the custom describe function
 class future_room : public room {
 public:
     void describe() override {

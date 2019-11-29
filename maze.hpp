@@ -1,4 +1,4 @@
-//
+// Abstract maze class alongside the concrete maze classes
 // Created by tlrla on 2019-11-28.
 //
 
@@ -6,7 +6,6 @@
 #define ABSTRACTFACTORY_MAZE_HPP
 
 #include <vector>
-#include <string>
 #include <iostream>
 #include "room.hpp"
 #include "wall.hpp"
@@ -14,6 +13,7 @@
 
 using namespace std;
 
+//Abstract maze class that implements basic maze logic such as the destructor and describeAll method
 class maze {
 private:
     vector<room*> rooms;
@@ -34,8 +34,10 @@ public:
         }
     }
 
+    //Abstract function that provides a custom description depending on the type of maze
     virtual void describe() = 0;
 
+    //After describing current maze type, iterates through all maze components and describes them as well
     void describeAll() {
         this -> describe();
         for(room* r : rooms) {
@@ -62,6 +64,7 @@ public:
     }
 };
 
+//Concrete maze of type faery that implements the custom description function
 class faery_maze : public maze{
 public:
     void describe() override {
@@ -69,6 +72,7 @@ public:
     }
 };
 
+//Concrete maze of type future that implements the custom description function
 class future_maze : public maze{
 public:
     void describe() override {

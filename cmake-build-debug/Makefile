@@ -123,32 +123,59 @@ abstractfactory/fast:
 	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/build
 .PHONY : abstractfactory/fast
 
-main.o: main.cpp.o
+driver.o: driver.cpp.o
 
-.PHONY : main.o
+.PHONY : driver.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/main.cpp.o
-.PHONY : main.cpp.o
+driver.cpp.o:
+	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/driver.cpp.o
+.PHONY : driver.cpp.o
 
-main.i: main.cpp.i
+driver.i: driver.cpp.i
 
-.PHONY : main.i
+.PHONY : driver.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/main.cpp.i
-.PHONY : main.cpp.i
+driver.cpp.i:
+	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/driver.cpp.i
+.PHONY : driver.cpp.i
 
-main.s: main.cpp.s
+driver.s: driver.cpp.s
 
-.PHONY : main.s
+.PHONY : driver.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/main.cpp.s
-.PHONY : main.cpp.s
+driver.cpp.s:
+	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/driver.cpp.s
+.PHONY : driver.cpp.s
+
+maze_game.o: maze_game.cpp.o
+
+.PHONY : maze_game.o
+
+# target to build an object file
+maze_game.cpp.o:
+	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/maze_game.cpp.o
+.PHONY : maze_game.cpp.o
+
+maze_game.i: maze_game.cpp.i
+
+.PHONY : maze_game.i
+
+# target to preprocess a source file
+maze_game.cpp.i:
+	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/maze_game.cpp.i
+.PHONY : maze_game.cpp.i
+
+maze_game.s: maze_game.cpp.s
+
+.PHONY : maze_game.s
+
+# target to generate assembly for a file
+maze_game.cpp.s:
+	$(MAKE) -f CMakeFiles/abstractfactory.dir/build.make CMakeFiles/abstractfactory.dir/maze_game.cpp.s
+.PHONY : maze_game.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... abstractfactory"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... driver.o"
+	@echo "... driver.i"
+	@echo "... driver.s"
+	@echo "... maze_game.o"
+	@echo "... maze_game.i"
+	@echo "... maze_game.s"
 .PHONY : help
 
 

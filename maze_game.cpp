@@ -4,6 +4,7 @@
 
 #include "maze_game.hpp"
 
+//Creates a basic maze, using the type of maze_factory provided, with two rooms, four walls, and one door connecting the two rooms
 maze* maze_game::create_maze(maze_factory* factory) {
     maze* new_maze = factory -> make_maze();
     room* room1 = factory -> make_room();
