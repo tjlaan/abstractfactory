@@ -8,11 +8,8 @@
 #include "maze_factory.hpp"
 
 class maze_game {
-private:
-    maze* game_maze;
-    maze* create_maze(maze_factory);
 public:
-    maze_game();
+    maze* create_maze(maze_factory*);
 };
 
 

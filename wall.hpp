@@ -6,16 +6,28 @@
 #define ABSTRACTFACTORY_WALL_HPP
 
 #include <vector>
-#include "door.hpp"
+#include <iostream>
 
 using namespace std;
 
 class wall {
-private:
-    vector<door> doors;
 public:
-    string virtual describe() = 0;
+    virtual ~wall() = default;
+    virtual void describe() = 0;
 };
 
+class faery_wall : public wall {
+public:
+    void describe() override {
+        cout << "A wall covered with flowers." << endl;
+    }
+};
+
+class future_wall : public wall {
+public:
+    void describe() override {
+        cout << "A wall covered with blinking lights." << endl;
+    }
+};
 
 #endif //ABSTRACTFACTORY_WALL_HPP
